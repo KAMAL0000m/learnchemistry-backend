@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\config\AppConfig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\server\HttpServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\server\Session.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\routing\Router.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\middleware\MiddlewareChain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\middleware\LoggingMiddleware.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\middleware\JwtAuthMiddleware.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\controllers\AuthController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\services\AuthService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\repositories\UserRepository.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\db\MySqlPool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\security\JwtService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\security\PasswordHasher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\utils\HttpResponse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="C:\vcpkg\installed\x64-windows\share\boost-1.90.0\assert\boost_assert.natvis" />
+    <Natvis Include="C:\vcpkg\installed\x64-windows\share\nlohmann_json\nlohmann_json.natvis" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5937EAD5-DE48-3134-A078-D5EBF68E5255}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
