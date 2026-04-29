@@ -55,6 +55,33 @@
     <ClCompile Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\repositories\CourseRepository.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\controllers\OrderController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\controllers\MeController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\services\OrderService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\services\MeService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\repositories\OrderRepository.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\repositories\EnrollmentRepository.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\controllers\AdminController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\services\AdminService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\repositories\AdminRepository.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\models\Course.h">
@@ -67,6 +94,33 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\controllers\CourseController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\repositories\OrderRepository.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\repositories\EnrollmentRepository.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\services\OrderService.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\services\MeService.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\controllers\OrderController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\controllers\MeController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\repositories\AdminRepository.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\services\AdminService.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\controllers\AdminController.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

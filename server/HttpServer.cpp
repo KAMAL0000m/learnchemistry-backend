@@ -1,16 +1,19 @@
 #include "server/HttpServer.h"
-
+#include "security/JwtService.h"
+#include "utils/HttpResponse.h"
 #include "server/Session.h"
 #include "controllers/AuthController.h"
-#include "utils/HttpResponse.h"
 #include "controllers/CourseController.h"
 #include <boost/asio/ip/address.hpp>
 #include <memory>
 #include <utility>
 #include <iostream>
+#include "controllers/OrderController.h"
+#include "controllers/MeController.h"
+#include "controllers/AdminController.h"
 
-
-namespace learnChemistry::server {
+namespace learnChemistry::server 
+{
 
     HttpServer::HttpServer(const learnChemistry::config::AppConfig& cfg)
         : cfg_(cfg),
@@ -51,11 +54,54 @@ namespace learnChemistry::server {
                 learnChemistry::controllers::CourseController controller(this->dbPool());
                 return controller.detail(req, ctx);
             });
+
+        router_.addRoute(http::verb::post, "/v1/orders/free",
+            [this](const http::request<http::string_body>& req,
+                learnChemistry::context::RequestContext& ctx)
+            {
+                learnChemistry::controllers::OrderController controller(this->dbPool());
+                return controller.freePurchase(req, ctx);
+            });
+
+        router_.addRoute(http::verb::get, "/v1/me/courses",
+            [this](const http::request<http::string_body>& req,
+                learnChemistry::context::RequestContext& ctx)
+            {
+                learnChemistry::controllers::MeController controller(this->dbPool());
+                return controller.myCourses(req, ctx);
+            });
+
+        // ✅ POST /v1/admin/courses  (create course)
+        router_.addRoute(http::verb::post, "/v1/admin/courses",
+            [this](const http::request<http::string_body>& req,
+                learnChemistry::context::RequestContext& ctx)
+            {
+                learnChemistry::controllers::AdminController controller(this->dbPool());
+                return controller.createCourse(req, ctx);
+            });
+
+        // ✅ POST /v1/admin/course-pdf/:id  (upload pdf bytes)
+        router_.addRoute(http::verb::post, "/v1/admin/course-pdf/:id",
+            [this](const http::request<http::string_body>& req,
+                learnChemistry::context::RequestContext& ctx)
+            {
+                learnChemistry::controllers::AdminController controller(this->dbPool());
+                return controller.uploadCoursePdf(req, ctx);
+            });
+
+        // ✅ GET /v1/admin/orders (list orders)
+        router_.addRoute(http::verb::get, "/v1/admin/orders",
+            [this](const http::request<http::string_body>& req,
+                learnChemistry::context::RequestContext& ctx)
+            {
+                learnChemistry::controllers::AdminController controller(this->dbPool());
+                return controller.listOrders(req, ctx);
+            });
+
     }
 
     void HttpServer::run() {
         doAccept();
-        //ioc_.run();
         try {
             ioc_.run();
         }
@@ -89,8 +135,9 @@ namespace learnChemistry::server {
         return std::string(it->value());  // beast::string_view -> std::string
     }
 
-    void HttpServer::addCorsHeaders(http::response<http::string_body>& res, const std::string& origin) {
-        // ✅ Allow only local UI origins (add your production UI later)
+    void HttpServer::addCorsHeaders(http::response<http::string_body>& res, const std::string& origin)
+    {
+        // ✅ Allow only local UI origins (add production UI later)
         const bool allowed =
             (origin == "http://localhost:5500") ||
             (origin == "http://127.0.0.1:5500");
@@ -100,9 +147,10 @@ namespace learnChemistry::server {
             res.set(http::field::access_control_allow_origin, origin);
             res.set(http::field::vary, "Origin");
         }
-
         res.set(http::field::access_control_allow_methods, "GET, POST, PUT, DELETE, OPTIONS");
-        res.set(http::field::access_control_allow_headers, "Content-Type, Authorization");
+        res.set(http::field::access_control_allow_headers,
+            "Content-Type, Authorization, X-Filename");
+
         res.set(http::field::access_control_max_age, "600");
     }
 
@@ -111,7 +159,7 @@ namespace learnChemistry::server {
     {
         const std::string origin = getOrigin(req);
 
-        // ✅ 1) CORS preflight: browser sends OPTIONS first
+        // CORS preflight
         if (req.method() == http::verb::options) {
             http::response<http::string_body> res{ http::status::no_content, req.version() };
             addCorsHeaders(res, origin);
@@ -121,37 +169,69 @@ namespace learnChemistry::server {
 
         learnChemistry::context::RequestContext ctx;
 
-        // ✅ 2) Normalize target (strip query + trailing slash)
+        // Normalize target
         std::string target = std::string(req.target());
+        if (auto q = target.find('?'); q != std::string::npos) target.resize(q);
+        if (target.size() > 1 && target.back() == '/') target.pop_back();
 
-        if (auto q = target.find('?'); q != std::string::npos)
-            target.resize(q);
+        // ✅ JWT protection for /v1/me/* and /v1/orders/*
+        const bool requiresAuth =
+            (target.rfind("/v1/me", 0) == 0) ||
+            (target.rfind("/v1/orders", 0) == 0) ||
+            (target.rfind("/v1/admin", 0) == 0);
 
-        if (target.size() > 1 && target.back() == '/')
-            target.pop_back();
+        if (requiresAuth) {
+            auto it = req.find(http::field::authorization);
+            if (it == req.end()) {
+                auto res = learnChemistry::utils::HttpResponse::json(
+                    http::status::unauthorized, { {"error","Missing Authorization header"} });
+                addCorsHeaders(res, origin);
+                res.version(req.version());
+                res.keep_alive(req.keep_alive());
+                return res;
+            }
 
-        // ✅ 3) Route match
+            const std::string auth = std::string(it->value());
+            const std::string prefix = "Bearer ";
+            if (auth.rfind(prefix, 0) != 0) {
+                auto res = learnChemistry::utils::HttpResponse::json(
+                    http::status::unauthorized, { {"error","Invalid Authorization format"} });
+                addCorsHeaders(res, origin);
+                res.version(req.version());
+                res.keep_alive(req.keep_alive());
+                return res;
+            }
+
+            const std::string token = auth.substr(prefix.size());
+            auto userOpt = learnChemistry::security::JwtService::verify(token, cfg_.jwt_secret);
+
+            if (!userOpt) {
+                auto res = learnChemistry::utils::HttpResponse::json(
+                    http::status::unauthorized, { {"error","Invalid or expired token"} });
+                addCorsHeaders(res, origin);
+                res.version(req.version());
+                res.keep_alive(req.keep_alive());
+                return res;
+            }
+
+            ctx.user = *userOpt;
+        }
+
+        // Route match
         auto route = router_.match(req.method(), target);
 
         http::response<http::string_body> res;
-
         if (!route) {
             res = learnChemistry::utils::HttpResponse::json(
-                http::status::not_found,
-                { {"error", "not found"}, {"path", target} }
-            );
+                http::status::not_found, { {"error","not found"}, {"path", target} });
         }
         else {
             res = route->handler(req, ctx);
         }
 
-        // ✅ 4) Add CORS headers to *all* responses (so browser can read response)
         addCorsHeaders(res, origin);
-
-        // ✅ 5) Preserve request HTTP version & keep-alive
         res.version(req.version());
         res.keep_alive(req.keep_alive());
-
         return res;
     }
 

@@ -46,8 +46,18 @@ add_executable(learnChemistry
     controllers/CourseController.cpp
     services/CourseService.cpp
     repositories/CourseRepository.cpp
+    controllers/OrderController.cpp
+    controllers/MeController.cpp
+    services/OrderService.cpp
+    services/MeService.cpp
+    repositories/OrderRepository.cpp
+    repositories/EnrollmentRepository.cpp
+    controllers/AdminController.cpp
+    services/AdminService.cpp
+    repositories/AdminRepository.cpp
 
- "models/Course.h" "repositories/CourseRepository.h" "repositories/CourseRepository.cpp" "services/CourseService.h" "services/CourseService.cpp" "controllers/CourseController.h" "controllers/CourseController.cpp")
+
+ "models/Course.h" "repositories/CourseRepository.h" "repositories/CourseRepository.cpp" "services/CourseService.h" "services/CourseService.cpp" "controllers/CourseController.h" "controllers/CourseController.cpp" "repositories/OrderRepository.h" "repositories/OrderRepository.cpp" "repositories/EnrollmentRepository.h" "repositories/EnrollmentRepository.cpp" "services/OrderService.h" "services/OrderService.cpp" "services/MeService.h" "services/MeService.cpp" "controllers/OrderController.h" "controllers/OrderController.cpp" "controllers/MeController.h" "controllers/MeController.cpp" "repositories/AdminRepository.h" "repositories/AdminRepository.cpp" "services/AdminService.h" "services/AdminService.cpp" "controllers/AdminController.h" "controllers/AdminController.cpp")
 
 # -----------------------------
 # Include directories
