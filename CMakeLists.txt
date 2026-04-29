@@ -43,7 +43,11 @@ add_executable(learnChemistry
     security/JwtService.cpp
     security/PasswordHasher.cpp
     utils/HttpResponse.cpp
-)
+    controllers/CourseController.cpp
+    services/CourseService.cpp
+    repositories/CourseRepository.cpp
+
+ "models/Course.h" "repositories/CourseRepository.h" "repositories/CourseRepository.cpp" "services/CourseService.h" "services/CourseService.cpp" "controllers/CourseController.h" "controllers/CourseController.cpp")
 
 # -----------------------------
 # Include directories

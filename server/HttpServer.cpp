@@ -3,7 +3,7 @@
 #include "server/Session.h"
 #include "controllers/AuthController.h"
 #include "utils/HttpResponse.h"
-
+#include "controllers/CourseController.h"
 #include <boost/asio/ip/address.hpp>
 #include <memory>
 #include <utility>
@@ -35,6 +35,22 @@ namespace learnChemistry::server {
         router_.addRoute(http::verb::post, "/v1/auth/signup",
             makeAuthHandler(&learnChemistry::controllers::AuthController::signup));
 
+
+        router_.addRoute(http::verb::get, "/v1/courses",
+            [this](const http::request<http::string_body>& req,
+                learnChemistry::context::RequestContext& ctx)
+            {
+                learnChemistry::controllers::CourseController controller(this->dbPool());
+                return controller.list(req, ctx);
+            });
+
+        router_.addRoute(http::verb::get, "/v1/courses/:id",
+            [this](const http::request<http::string_body>& req,
+                learnChemistry::context::RequestContext& ctx)
+            {
+                learnChemistry::controllers::CourseController controller(this->dbPool());
+                return controller.detail(req, ctx);
+            });
     }
 
     void HttpServer::run() {

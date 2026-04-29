@@ -46,6 +46,29 @@
     <ClCompile Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\utils\HttpResponse.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\controllers\CourseController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\services\CourseService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\repositories\CourseRepository.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\models\Course.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\repositories\CourseRepository.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\services\CourseService.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\controllers\CourseController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\CMakeLists.txt" />
@@ -55,6 +78,9 @@
     <Natvis Include="C:\vcpkg\installed\x64-windows\share\nlohmann_json\nlohmann_json.natvis" />
   </ItemGroup>
   <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{8902F56A-4038-3746-B572-E0E93A6AF147}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Source Files">
       <UniqueIdentifier>{5937EAD5-DE48-3134-A078-D5EBF68E5255}</UniqueIdentifier>
     </Filter>
