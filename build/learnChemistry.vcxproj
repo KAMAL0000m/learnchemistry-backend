@@ -448,6 +448,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\controllers\AdminController.cpp" />
     <ClCompile Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\services\AdminService.cpp" />
     <ClCompile Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\repositories\AdminRepository.cpp" />
+    <ClCompile Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\controllers\DownloadController.cpp" />
+    <ClCompile Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\services\DownloadService.cpp" />
+    <ClCompile Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\repositories\CourseAssetRepository.cpp" />
     <ClInclude Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\models\Course.h" />
     <ClInclude Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\repositories\CourseRepository.h" />
     <ClInclude Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\services\CourseService.h" />
@@ -461,6 +464,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\repositories\AdminRepository.h" />
     <ClInclude Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\services\AdminService.h" />
     <ClInclude Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\controllers\AdminController.h" />
+    <ClInclude Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\repositories\CourseAssetRepository.h" />
     <Natvis Include="C:\vcpkg\installed\x64-windows\share\boost-1.90.0\assert\boost_assert.natvis">
     </Natvis>
     <Natvis Include="C:\vcpkg\installed\x64-windows\share\nlohmann_json\nlohmann_json.natvis">

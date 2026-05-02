@@ -17,15 +17,19 @@ namespace learnChemistry::server {
         using tcp = boost::asio::ip::tcp;
 
         Session(tcp::socket socket, HttpServer& server);
-
         void start();
 
     private:
         void doRead();
         void onRead(beast::error_code ec, std::size_t bytes);
 
+        // String response write path
         void send(http::response<http::string_body>&& res);
-        void onWrite(bool close, beast::error_code ec, std::size_t bytes);
+        void onWriteString(bool close, beast::error_code ec, std::size_t bytes);
+
+        // File response write path
+        void sendFile(http::response<http::file_body>&& res);
+        void onWriteFile(bool close, beast::error_code ec, std::size_t bytes);
 
         void doClose();
 
@@ -36,8 +40,8 @@ namespace learnChemistry::server {
         beast::flat_buffer buffer_;
         http::request<http::string_body> req_;
 
-        // ✅ IMPORTANT: keep response alive until async_write finishes
         std::shared_ptr<http::response<http::string_body>> res_;
+        std::shared_ptr<http::response<http::file_body>> fileRes_;
     };
 
 } // namespace learnChemistry::server

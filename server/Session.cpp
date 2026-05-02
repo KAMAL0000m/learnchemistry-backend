@@ -14,7 +14,6 @@ namespace learnChemistry::server {
         doRead();
     }
 
-
     void Session::doRead() {
         buffer_.consume(buffer_.size());
         req_ = {};
@@ -27,8 +26,6 @@ namespace learnChemistry::server {
         );
     }
 
-    
-
     void Session::onRead(beast::error_code ec, std::size_t /*bytes*/) {
         if (ec == http::error::end_of_stream) {
             return doClose();
@@ -40,21 +37,38 @@ namespace learnChemistry::server {
         }
 
         try {
-            auto res = server_.handleRequest(req_);
+            // Normalize target
+            std::string target = std::string(req_.target());
+            if (auto q = target.find('?'); q != std::string::npos) target.resize(q);
+            if (target.size() > 1 && target.back() == '/') target.pop_back();
 
-            // Keep protocol details consistent
-            res.version(req_.version());
-            res.keep_alive(req_.keep_alive());
+            // ✅ Download endpoint: OPTIONS must be handled as string (CORS preflight),
+            // and GET must be handled as file streaming.
+            if (target.rfind("/v1/download", 0) == 0) {
 
-            const bool close = res.need_eof();
-            send(std::move(res));
+                // ✅ Preflight goes through normal string handler
+                if (req_.method() == http::verb::options) {
+                    auto res = server_.handleRequest(req_);
+                    res.version(req_.version());
+                    res.keep_alive(req_.keep_alive());
+                    send(std::move(res));
+                    return;
+                }
 
-            if (close) {
-                return doClose();
+                // ✅ Actual download
+                auto fres = server_.handleDownload(req_);
+                fres.version(req_.version());
+                fres.keep_alive(req_.keep_alive());
+                sendFile(std::move(fres));
+                return;
             }
 
-            // For keep-alive connections, continue reading
-            doRead();
+            // Default JSON APIs
+            auto res = server_.handleRequest(req_);
+            res.version(req_.version());
+            res.keep_alive(req_.keep_alive());
+            send(std::move(res));
+            return;
         }
         catch (const std::exception& ex) {
             std::cerr << "Exception while handling request: " << ex.what() << "\n";
@@ -66,30 +80,70 @@ namespace learnChemistry::server {
             res.keep_alive(false);
 
             send(std::move(res));
-            doClose();
+            return;
         }
     }
 
+    // ---------------------------
+    // String response write path
+    // ---------------------------
     void Session::send(http::response<http::string_body>&& res) {
-        // ✅ Store response on heap so it lives until write completes
         res_ = std::make_shared<http::response<http::string_body>>(std::move(res));
 
         auto self = shared_from_this();
         http::async_write(socket_, *res_,
             [self](beast::error_code ec, std::size_t bytes) {
-                self->onWrite(self->res_->need_eof(), ec, bytes);
+                const bool close = self->res_ ? self->res_->need_eof() : true;
+                self->onWriteString(close, ec, bytes);
             }
         );
     }
 
-    void Session::onWrite(bool /*close*/, beast::error_code ec, std::size_t /*bytes*/) {
+    void Session::onWriteString(bool close, beast::error_code ec, std::size_t /*bytes*/) {
         if (ec) {
-            std::cerr << "Write error: " << ec.message() << "\n";
+            std::cerr << "Write error (string): " << ec.message() << "\n";
+            doClose();
             return;
         }
 
-        // ✅ Release response after write completes
         res_.reset();
+
+        if (close) {
+            return doClose();
+        }
+
+        doRead();
+    }
+
+    // ---------------------------
+    // File response write path
+    // ---------------------------
+    void Session::sendFile(http::response<http::file_body>&& res) {
+        fileRes_ = std::make_shared<http::response<http::file_body>>(std::move(res));
+
+        auto self = shared_from_this();
+        http::async_write(socket_, *fileRes_,
+            [self](beast::error_code ec, std::size_t bytes) {
+                const bool close = self->fileRes_ ? self->fileRes_->need_eof() : true;
+                self->onWriteFile(close, ec, bytes);
+            }
+        );
+    }
+
+    void Session::onWriteFile(bool close, beast::error_code ec, std::size_t /*bytes*/) {
+        if (ec) {
+            std::cerr << "Write error (file): " << ec.message() << "\n";
+            doClose();
+            return;
+        }
+
+        fileRes_.reset();
+
+        if (close) {
+            return doClose();
+        }
+
+        doRead();
     }
 
     void Session::doClose() {
