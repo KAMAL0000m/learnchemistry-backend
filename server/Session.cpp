@@ -37,19 +37,16 @@ namespace learnChemistry::server {
         }
 
         try {
-            // Normalize target (strip query + trailing slash)
             std::string target = std::string(req_.target());
             if (auto q = target.find('?'); q != std::string::npos) target.resize(q);
             if (target.size() > 1 && target.back() == '/') target.pop_back();
 
-            // ============================================
-            // ✅ File download endpoint (/v1/download/:id)
-            //    - OPTIONS => handleRequest (string, CORS)
-            //    - GET     => handleDownload (file stream)
-            // ============================================
+            // ==========================
+            // /v1/download/:id (file)
+            // ==========================
             if (target.rfind("/v1/download", 0) == 0) {
 
-                // Preflight must be handled as string response
+                // OPTIONS preflight must be string response
                 if (req_.method() == http::verb::options) {
                     auto res = server_.handleRequest(req_);
                     res.version(req_.version());
@@ -58,21 +55,28 @@ namespace learnChemistry::server {
                     return;
                 }
 
-                auto fres = server_.handleDownload(req_);
-                fres.version(req_.version());
-                fres.keep_alive(req_.keep_alive());
-                sendFile(std::move(fres));
+                // Only GET is a file download
+                if (req_.method() == http::verb::get) {
+                    auto fres = server_.handleDownload(req_);
+                    fres.version(req_.version());
+                    fres.keep_alive(req_.keep_alive());
+                    sendFile(std::move(fres));
+                    return;
+                }
+
+                // Anything else -> normal handler
+                auto res = server_.handleRequest(req_);
+                res.version(req_.version());
+                res.keep_alive(req_.keep_alive());
+                send(std::move(res));
                 return;
             }
 
-            // ============================================
-            // ✅ Thumbnail endpoint (/v1/thumb/:id) (public)
-            //    - OPTIONS => handleRequest (string, CORS)
-            //    - GET     => handleThumb (file stream)
-            // ============================================
+            // ==========================
+            // /v1/thumb/:id (file)
+            // ==========================
             if (target.rfind("/v1/thumb", 0) == 0) {
 
-                // Preflight must be handled as string response
                 if (req_.method() == http::verb::options) {
                     auto res = server_.handleRequest(req_);
                     res.version(req_.version());
@@ -81,16 +85,22 @@ namespace learnChemistry::server {
                     return;
                 }
 
-                auto fres = server_.handleThumb(req_);
-                fres.version(req_.version());
-                fres.keep_alive(req_.keep_alive());
-                sendFile(std::move(fres));
+                if (req_.method() == http::verb::get) {
+                    auto fres = server_.handleThumb(req_);
+                    fres.version(req_.version());
+                    fres.keep_alive(req_.keep_alive());
+                    sendFile(std::move(fres));
+                    return;
+                }
+
+                auto res = server_.handleRequest(req_);
+                res.version(req_.version());
+                res.keep_alive(req_.keep_alive());
+                send(std::move(res));
                 return;
             }
 
-            // ============================================
-            // Default JSON APIs (string response)
-            // ============================================
+            // Default JSON APIs
             auto res = server_.handleRequest(req_);
             res.version(req_.version());
             res.keep_alive(req_.keep_alive());
@@ -135,10 +145,7 @@ namespace learnChemistry::server {
 
         res_.reset();
 
-        if (close) {
-            return doClose();
-        }
-
+        if (close) return doClose();
         doRead();
     }
 
@@ -166,10 +173,7 @@ namespace learnChemistry::server {
 
         fileRes_.reset();
 
-        if (close) {
-            return doClose();
-        }
-
+        if (close) return doClose();
         doRead();
     }
 

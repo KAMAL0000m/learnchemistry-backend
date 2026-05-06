@@ -268,40 +268,50 @@ namespace learnChemistry::server {
         const std::string origin = getOrigin(req);
         learnChemistry::context::RequestContext ctx;
 
-        auto it = req.find(http::field::authorization);
-        if (it == req.end()) {
-            http::response<http::file_body> res{ http::status::unauthorized, req.version() };
+        auto makeEmpty = [&](http::status st) {
+            http::response<http::file_body> res{ st, req.version() };
+            res.set(http::field::content_type, "text/plain");
+            res.content_length(0);                 // ✅ critical for file_body error responses
+            addCorsHeaders(res, origin);
+            res.keep_alive(req.keep_alive());
+            return res;
+        };
+
+        try {
+            auto it = req.find(http::field::authorization);
+            if (it == req.end()) {
+                return makeEmpty(http::status::unauthorized);
+            }
+
+            const std::string auth = std::string(it->value());
+            const std::string prefix = "Bearer ";
+            if (auth.rfind(prefix, 0) != 0) {
+                return makeEmpty(http::status::unauthorized);
+            }
+
+            const std::string token = auth.substr(prefix.size());
+            auto userOpt = learnChemistry::security::JwtService::verify(token, cfg_.jwt_secret);
+            if (!userOpt) {
+                return makeEmpty(http::status::unauthorized);
+            }
+
+            ctx.user = *userOpt;
+
+            learnChemistry::controllers::DownloadController controller(this->dbPool());
+            auto res = controller.downloadPdf(req, ctx);
+
             addCorsHeaders(res, origin);
             res.keep_alive(req.keep_alive());
             return res;
         }
-
-        const std::string auth = std::string(it->value());
-        const std::string prefix = "Bearer ";
-        if (auth.rfind(prefix, 0) != 0) {
-            http::response<http::file_body> res{ http::status::unauthorized, req.version() };
-            addCorsHeaders(res, origin);
-            res.keep_alive(req.keep_alive());
-            return res;
+        catch (const std::exception& ex) {
+            std::cerr << "[handleDownload] exception: " << ex.what() << "\n";
+            return makeEmpty(http::status::internal_server_error);
         }
-
-        const std::string token = auth.substr(prefix.size());
-        auto userOpt = learnChemistry::security::JwtService::verify(token, cfg_.jwt_secret);
-        if (!userOpt) {
-            http::response<http::file_body> res{ http::status::unauthorized, req.version() };
-            addCorsHeaders(res, origin);
-            res.keep_alive(req.keep_alive());
-            return res;
+        catch (...) {
+            std::cerr << "[handleDownload] unknown exception\n";
+            return makeEmpty(http::status::internal_server_error);
         }
-
-        ctx.user = *userOpt;
-
-        learnChemistry::controllers::DownloadController controller(this->dbPool());
-        auto res = controller.downloadPdf(req, ctx);
-
-        addCorsHeaders(res, origin);
-        res.keep_alive(req.keep_alive());
-        return res;
     }
 
     http::response<http::file_body>

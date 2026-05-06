@@ -3,7 +3,6 @@
 #include <optional>
 
 #include "db/MySqlPool.h"
-#include "repositories/CourseAssetRepository.h"
 
 namespace learnChemistry::services {
 
