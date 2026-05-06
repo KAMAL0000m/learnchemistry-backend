@@ -28,6 +28,7 @@ namespace learnChemistry::server {
             handleDownload(const http::request<http::string_body>& req);
 
         learnChemistry::db::MySqlPool& dbPool();
+        http::response<http::file_body> handleThumb(const http::request<http::string_body>& req);
 
     private:
         void doAccept();
@@ -36,7 +37,7 @@ namespace learnChemistry::server {
 
         static void addCorsHeaders(http::response<http::string_body>& res, const std::string& origin);
         static void addCorsHeaders(http::response<http::file_body>& res, const std::string& origin);
-
+        
     private:
         learnChemistry::config::AppConfig cfg_;
         boost::asio::io_context ioc_;

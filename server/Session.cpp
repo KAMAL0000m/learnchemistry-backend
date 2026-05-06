@@ -37,16 +37,19 @@ namespace learnChemistry::server {
         }
 
         try {
-            // Normalize target
+            // Normalize target (strip query + trailing slash)
             std::string target = std::string(req_.target());
             if (auto q = target.find('?'); q != std::string::npos) target.resize(q);
             if (target.size() > 1 && target.back() == '/') target.pop_back();
 
-            // ✅ Download endpoint: OPTIONS must be handled as string (CORS preflight),
-            // and GET must be handled as file streaming.
+            // ============================================
+            // ✅ File download endpoint (/v1/download/:id)
+            //    - OPTIONS => handleRequest (string, CORS)
+            //    - GET     => handleDownload (file stream)
+            // ============================================
             if (target.rfind("/v1/download", 0) == 0) {
 
-                // ✅ Preflight goes through normal string handler
+                // Preflight must be handled as string response
                 if (req_.method() == http::verb::options) {
                     auto res = server_.handleRequest(req_);
                     res.version(req_.version());
@@ -55,7 +58,6 @@ namespace learnChemistry::server {
                     return;
                 }
 
-                // ✅ Actual download
                 auto fres = server_.handleDownload(req_);
                 fres.version(req_.version());
                 fres.keep_alive(req_.keep_alive());
@@ -63,7 +65,32 @@ namespace learnChemistry::server {
                 return;
             }
 
-            // Default JSON APIs
+            // ============================================
+            // ✅ Thumbnail endpoint (/v1/thumb/:id) (public)
+            //    - OPTIONS => handleRequest (string, CORS)
+            //    - GET     => handleThumb (file stream)
+            // ============================================
+            if (target.rfind("/v1/thumb", 0) == 0) {
+
+                // Preflight must be handled as string response
+                if (req_.method() == http::verb::options) {
+                    auto res = server_.handleRequest(req_);
+                    res.version(req_.version());
+                    res.keep_alive(req_.keep_alive());
+                    send(std::move(res));
+                    return;
+                }
+
+                auto fres = server_.handleThumb(req_);
+                fres.version(req_.version());
+                fres.keep_alive(req_.keep_alive());
+                sendFile(std::move(fres));
+                return;
+            }
+
+            // ============================================
+            // Default JSON APIs (string response)
+            // ============================================
             auto res = server_.handleRequest(req_);
             res.version(req_.version());
             res.keep_alive(req_.keep_alive());

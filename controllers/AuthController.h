@@ -1,6 +1,8 @@
 #pragma once
+
 #include <boost/beast/http.hpp>
 #include <string>
+
 #include "context/RequestContext.h"
 #include "db/MySqlPool.h"
 
@@ -14,15 +16,15 @@ namespace learnChemistry::controllers {
 
         http::response<http::string_body>
             login(const http::request<http::string_body>& req,
-                learnChemistry::context::RequestContext&) const;
+                learnChemistry::context::RequestContext& ctx) const;
 
         http::response<http::string_body>
             signup(const http::request<http::string_body>& req,
-                learnChemistry::context::RequestContext&) const;
+                learnChemistry::context::RequestContext& ctx) const;
 
     private:
         std::string jwtSecret_;
         learnChemistry::db::MySqlPool& pool_;
     };
 
-}
+} // namespace learnChemistry::controllers

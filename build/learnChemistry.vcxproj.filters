@@ -91,6 +91,12 @@
     <ClCompile Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\repositories\CourseAssetRepository.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\controllers\ThumbController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\utils\Multipart.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\models\Course.h">
@@ -133,6 +139,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\repositories\CourseAssetRepository.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\utils\Multipart.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\utils\FileUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\KamaleshMahata\Documents\LearnChemistry\Repo\learnchemistry-backend\controllers\ThumbController.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

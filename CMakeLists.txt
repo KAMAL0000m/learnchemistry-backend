@@ -58,10 +58,10 @@ add_executable(learnChemistry
     controllers/DownloadController.cpp
     services/DownloadService.cpp
     repositories/CourseAssetRepository.cpp
+    controllers/ThumbController.cpp
 
 
-
- "models/Course.h" "repositories/CourseRepository.h" "repositories/CourseRepository.cpp" "services/CourseService.h" "services/CourseService.cpp" "controllers/CourseController.h" "controllers/CourseController.cpp" "repositories/OrderRepository.h" "repositories/OrderRepository.cpp" "repositories/EnrollmentRepository.h" "repositories/EnrollmentRepository.cpp" "services/OrderService.h" "services/OrderService.cpp" "services/MeService.h" "services/MeService.cpp" "controllers/OrderController.h" "controllers/OrderController.cpp" "controllers/MeController.h" "controllers/MeController.cpp" "repositories/AdminRepository.h" "repositories/AdminRepository.cpp" "services/AdminService.h" "services/AdminService.cpp" "controllers/AdminController.h" "controllers/AdminController.cpp" "repositories/CourseAssetRepository.h")
+ "models/Course.h" "repositories/CourseRepository.h" "repositories/CourseRepository.cpp" "services/CourseService.h" "services/CourseService.cpp" "controllers/CourseController.h" "controllers/CourseController.cpp" "repositories/OrderRepository.h" "repositories/OrderRepository.cpp" "repositories/EnrollmentRepository.h" "repositories/EnrollmentRepository.cpp" "services/OrderService.h" "services/OrderService.cpp" "services/MeService.h" "services/MeService.cpp" "controllers/OrderController.h" "controllers/OrderController.cpp" "controllers/MeController.h" "controllers/MeController.cpp" "repositories/AdminRepository.h" "repositories/AdminRepository.cpp" "services/AdminService.h" "services/AdminService.cpp" "controllers/AdminController.h" "controllers/AdminController.cpp" "repositories/CourseAssetRepository.h" "utils/Multipart.h" "utils/Multipart.cpp" "utils/FileUtil.h" "controllers/ThumbController.h" "controllers/ThumbController.cpp")
 
 # -----------------------------
 # Include directories

@@ -18,15 +18,13 @@ namespace learnChemistry::repositories {
             const std::string& thumbnailUrl,
             int isActive);
 
-        static long long insertCourseAsset(mysqlx::Session& sess,
-            long long courseId,
-            const std::string& assetType,
-            const std::string& title,
-            const std::string& storageKey,
-            const std::string& originalFilename,
-            const std::string& mimeType,
-            long long fileSize,
-            int isActive);
+        // ✅ NEW: update file paths stored directly in courses table
+        static void updateCoursePdf(mysqlx::Session& sess, long long courseId,
+            const std::string& pdfPath, const std::string& pdfMime);
+
+        static void updateCourseThumbnail(mysqlx::Session& sess, long long courseId,
+            const std::string& thumbPath, const std::string& thumbMime,
+            const std::string& thumbUrl);
 
         static mysqlx::RowResult listOrders(mysqlx::Session& sess);
     };

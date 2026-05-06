@@ -49,6 +49,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -69,7 +70,7 @@ events:
       The output was:
       0
       MSBuild version 18.6.1+e5ebe1565 for .NET Framework
-      Build started 27-04-2026 20:48:04.
+      Build started 02-05-2026 20:53:06.
       
       Project "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\4.3.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -98,7 +99,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.62
+      Time Elapsed 00:00:01.80
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -142,6 +143,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/Git/cmd/"
       - "C:/vcpkg/installed/x64-windows/debug/vcpkg/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Server 8.0/bin/"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/KamaleshMahata/AppData/Local/Microsoft/WindowsApps/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/KamaleshMahata/AppData/Local/Programs/Podman/"
@@ -157,6 +159,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/Program Files/Git/cmd/"
       - "C:/vcpkg/installed/x64-windows/vcpkg/"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Server 8.0/bin/"
+      - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/vcpkg/installed/x64-windows/Users/KamaleshMahata/AppData/Local/Microsoft/WindowsApps/"
       - "C:/vcpkg/installed/x64-windows/Users/KamaleshMahata/AppData/Local/Programs/Podman/"
@@ -172,6 +175,7 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/vcpkg/"
       - "C:/Program Files/MySQL/MySQL Server 8.0/bin/"
+      - "C:/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/Users/KamaleshMahata/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/KamaleshMahata/AppData/Local/Programs/Podman/"
@@ -212,6 +216,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Server 8.0/bin/link.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Server 8.0/bin/link.exe"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Server 8.0/bin/link"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/link.com"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/link.exe"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/link"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Shell 8.0/bin/link.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Shell 8.0/bin/link.exe"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Shell 8.0/bin/link"
@@ -257,6 +264,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Server 8.0/bin/link.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Server 8.0/bin/link.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Server 8.0/bin/link"
+      - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/link.com"
+      - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/link.exe"
+      - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/link"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Shell 8.0/bin/link.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Shell 8.0/bin/link.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Shell 8.0/bin/link"
@@ -288,6 +298,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -326,6 +337,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/Git/cmd/"
       - "C:/vcpkg/installed/x64-windows/debug/vcpkg/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Server 8.0/bin/"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/KamaleshMahata/AppData/Local/Microsoft/WindowsApps/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/KamaleshMahata/AppData/Local/Programs/Podman/"
@@ -341,6 +353,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/Program Files/Git/cmd/"
       - "C:/vcpkg/installed/x64-windows/vcpkg/"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Server 8.0/bin/"
+      - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/vcpkg/installed/x64-windows/Users/KamaleshMahata/AppData/Local/Microsoft/WindowsApps/"
       - "C:/vcpkg/installed/x64-windows/Users/KamaleshMahata/AppData/Local/Programs/Podman/"
@@ -356,6 +369,7 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/vcpkg/"
       - "C:/Program Files/MySQL/MySQL Server 8.0/bin/"
+      - "C:/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/Users/KamaleshMahata/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/KamaleshMahata/AppData/Local/Programs/Podman/"
@@ -396,6 +410,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Server 8.0/bin/lld-link.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Server 8.0/bin/lld-link.exe"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Server 8.0/bin/lld-link"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/lld-link.com"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/lld-link.exe"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/lld-link"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Shell 8.0/bin/lld-link.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Shell 8.0/bin/lld-link.exe"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Shell 8.0/bin/lld-link"
@@ -441,6 +458,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Server 8.0/bin/lld-link.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Server 8.0/bin/lld-link.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Server 8.0/bin/lld-link"
+      - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/lld-link.com"
+      - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/lld-link.exe"
+      - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/lld-link"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Shell 8.0/bin/lld-link.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Shell 8.0/bin/lld-link.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Shell 8.0/bin/lld-link"
@@ -486,6 +506,9 @@ events:
       - "C:/Program Files/MySQL/MySQL Server 8.0/bin/lld-link.com"
       - "C:/Program Files/MySQL/MySQL Server 8.0/bin/lld-link.exe"
       - "C:/Program Files/MySQL/MySQL Server 8.0/bin/lld-link"
+      - "C:/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/lld-link.com"
+      - "C:/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/lld-link.exe"
+      - "C:/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/lld-link"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/lld-link.com"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/lld-link.exe"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/lld-link"
@@ -516,6 +539,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -552,6 +576,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/Git/cmd/"
       - "C:/vcpkg/installed/x64-windows/debug/vcpkg/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Server 8.0/bin/"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/KamaleshMahata/AppData/Local/Microsoft/WindowsApps/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/KamaleshMahata/AppData/Local/Programs/Podman/"
@@ -567,6 +592,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/Program Files/Git/cmd/"
       - "C:/vcpkg/installed/x64-windows/vcpkg/"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Server 8.0/bin/"
+      - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/vcpkg/installed/x64-windows/Users/KamaleshMahata/AppData/Local/Microsoft/WindowsApps/"
       - "C:/vcpkg/installed/x64-windows/Users/KamaleshMahata/AppData/Local/Programs/Podman/"
@@ -582,6 +608,7 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/vcpkg/"
       - "C:/Program Files/MySQL/MySQL Server 8.0/bin/"
+      - "C:/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/Users/KamaleshMahata/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/KamaleshMahata/AppData/Local/Programs/Podman/"
@@ -622,6 +649,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Server 8.0/bin/link.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Server 8.0/bin/link.exe"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Server 8.0/bin/link"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/link.com"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/link.exe"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/link"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Shell 8.0/bin/link.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Shell 8.0/bin/link.exe"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Shell 8.0/bin/link"
@@ -667,6 +697,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Server 8.0/bin/link.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Server 8.0/bin/link.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Server 8.0/bin/link"
+      - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/link.com"
+      - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/link.exe"
+      - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/link"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Shell 8.0/bin/link.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Shell 8.0/bin/link.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Shell 8.0/bin/link"
@@ -698,6 +731,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -734,6 +768,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/Git/cmd/"
       - "C:/vcpkg/installed/x64-windows/debug/vcpkg/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Server 8.0/bin/"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/KamaleshMahata/AppData/Local/Microsoft/WindowsApps/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/KamaleshMahata/AppData/Local/Programs/Podman/"
@@ -749,6 +784,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/Program Files/Git/cmd/"
       - "C:/vcpkg/installed/x64-windows/vcpkg/"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Server 8.0/bin/"
+      - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/vcpkg/installed/x64-windows/Users/KamaleshMahata/AppData/Local/Microsoft/WindowsApps/"
       - "C:/vcpkg/installed/x64-windows/Users/KamaleshMahata/AppData/Local/Programs/Podman/"
@@ -764,6 +800,7 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/vcpkg/"
       - "C:/Program Files/MySQL/MySQL Server 8.0/bin/"
+      - "C:/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/Users/KamaleshMahata/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/KamaleshMahata/AppData/Local/Programs/Podman/"
@@ -804,6 +841,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Server 8.0/bin/mt.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Server 8.0/bin/mt.exe"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Server 8.0/bin/mt"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/mt.com"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/mt.exe"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/mt"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Shell 8.0/bin/mt.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Shell 8.0/bin/mt.exe"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Shell 8.0/bin/mt"
@@ -849,6 +889,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Server 8.0/bin/mt.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Server 8.0/bin/mt.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Server 8.0/bin/mt"
+      - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/mt.com"
+      - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/mt.exe"
+      - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/mt"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Shell 8.0/bin/mt.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Shell 8.0/bin/mt.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Shell 8.0/bin/mt"
@@ -894,6 +937,9 @@ events:
       - "C:/Program Files/MySQL/MySQL Server 8.0/bin/mt.com"
       - "C:/Program Files/MySQL/MySQL Server 8.0/bin/mt.exe"
       - "C:/Program Files/MySQL/MySQL Server 8.0/bin/mt"
+      - "C:/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/mt.com"
+      - "C:/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/mt.exe"
+      - "C:/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/mt"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/mt.com"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/mt.exe"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/mt"
@@ -924,6 +970,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -960,6 +1007,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/Git/cmd/"
       - "C:/vcpkg/installed/x64-windows/debug/vcpkg/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Server 8.0/bin/"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/KamaleshMahata/AppData/Local/Microsoft/WindowsApps/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/KamaleshMahata/AppData/Local/Programs/Podman/"
@@ -975,6 +1023,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/Program Files/Git/cmd/"
       - "C:/vcpkg/installed/x64-windows/vcpkg/"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Server 8.0/bin/"
+      - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/vcpkg/installed/x64-windows/Users/KamaleshMahata/AppData/Local/Microsoft/WindowsApps/"
       - "C:/vcpkg/installed/x64-windows/Users/KamaleshMahata/AppData/Local/Programs/Podman/"
@@ -990,6 +1039,7 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/vcpkg/"
       - "C:/Program Files/MySQL/MySQL Server 8.0/bin/"
+      - "C:/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/Users/KamaleshMahata/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/KamaleshMahata/AppData/Local/Programs/Podman/"
@@ -1030,6 +1080,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Server 8.0/bin/lib.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Server 8.0/bin/lib.exe"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Server 8.0/bin/lib"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/lib.com"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/lib.exe"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/lib"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Shell 8.0/bin/lib.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Shell 8.0/bin/lib.exe"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Shell 8.0/bin/lib"
@@ -1075,6 +1128,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Server 8.0/bin/lib.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Server 8.0/bin/lib.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Server 8.0/bin/lib"
+      - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/lib.com"
+      - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/lib.exe"
+      - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/lib"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Shell 8.0/bin/lib.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Shell 8.0/bin/lib.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Shell 8.0/bin/lib"
@@ -1106,6 +1162,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -1153,6 +1210,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/Git/cmd/"
       - "C:/vcpkg/installed/x64-windows/debug/vcpkg/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Server 8.0/bin/"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/KamaleshMahata/AppData/Local/Microsoft/WindowsApps/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/KamaleshMahata/AppData/Local/Programs/Podman/"
@@ -1188,6 +1246,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/Program Files/Git/cmd/"
       - "C:/vcpkg/installed/x64-windows/vcpkg/"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Server 8.0/bin/"
+      - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/vcpkg/installed/x64-windows/Users/KamaleshMahata/AppData/Local/Microsoft/WindowsApps/"
       - "C:/vcpkg/installed/x64-windows/Users/KamaleshMahata/AppData/Local/Programs/Podman/"
@@ -1223,6 +1282,7 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/vcpkg/"
       - "C:/Program Files/MySQL/MySQL Server 8.0/bin/"
+      - "C:/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/Users/KamaleshMahata/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/KamaleshMahata/AppData/Local/Programs/Podman/"
@@ -1299,6 +1359,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Server 8.0/bin/rc.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Server 8.0/bin/rc.exe"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Server 8.0/bin/rc"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/rc.com"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/rc.exe"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/rc"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Shell 8.0/bin/rc.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Shell 8.0/bin/rc.exe"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Shell 8.0/bin/rc"
@@ -1404,6 +1467,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Server 8.0/bin/rc.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Server 8.0/bin/rc.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Server 8.0/bin/rc"
+      - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/rc.com"
+      - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/rc.exe"
+      - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/rc"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Shell 8.0/bin/rc.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Shell 8.0/bin/rc.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Shell 8.0/bin/rc"
@@ -1509,6 +1575,9 @@ events:
       - "C:/Program Files/MySQL/MySQL Server 8.0/bin/rc.com"
       - "C:/Program Files/MySQL/MySQL Server 8.0/bin/rc.exe"
       - "C:/Program Files/MySQL/MySQL Server 8.0/bin/rc"
+      - "C:/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/rc.com"
+      - "C:/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/rc.exe"
+      - "C:/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/rc"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/rc.com"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/rc.exe"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/rc"
@@ -1575,6 +1644,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -1594,8 +1664,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/KamaleshMahata/Documents/LearnChemistry/Repo/learnchemistry-backend/build/CMakeFiles/CMakeScratch/TryCompile-hqdzl1"
-      binary: "C:/Users/KamaleshMahata/Documents/LearnChemistry/Repo/learnchemistry-backend/build/CMakeFiles/CMakeScratch/TryCompile-hqdzl1"
+      source: "C:/Users/KamaleshMahata/Documents/LearnChemistry/Repo/learnchemistry-backend/build/CMakeFiles/CMakeScratch/TryCompile-llr46k"
+      binary: "C:/Users/KamaleshMahata/Documents/LearnChemistry/Repo/learnchemistry-backend/build/CMakeFiles/CMakeScratch/TryCompile-llr46k"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1610,39 +1680,39 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/KamaleshMahata/Documents/LearnChemistry/Repo/learnchemistry-backend/build/CMakeFiles/CMakeScratch/TryCompile-hqdzl1'
+        Change Dir: 'C:/Users/KamaleshMahata/Documents/LearnChemistry/Repo/learnchemistry-backend/build/CMakeFiles/CMakeScratch/TryCompile-llr46k'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Insiders/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_2113d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Insiders/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_587a4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.6.1+e5ebe1565 for .NET Framework
-        Build started 27-04-2026 20:48:05.
+        Build started 02-05-2026 20:53:09.
         
-        Project "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hqdzl1\\cmTC_2113d.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-llr46k\\cmTC_587a4.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hqdzl1\\Debug\\".
-          Creating directory "cmTC_2113d.dir\\Debug\\cmTC_2113d.tlog\\".
+          Creating directory "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-llr46k\\Debug\\".
+          Creating directory "cmTC_587a4.dir\\Debug\\cmTC_587a4.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_2113d.dir\\Debug\\cmTC_2113d.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_2113d.dir\\Debug\\cmTC_2113d.tlog\\unsuccessfulbuild".
+          Creating "cmTC_587a4.dir\\Debug\\cmTC_587a4.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_587a4.dir\\Debug\\cmTC_587a4.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_2113d.dir\\Debug\\\\" /Fd"cmTC_2113d.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_587a4.dir\\Debug\\\\" /Fd"cmTC_587a4.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36231 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_2113d.dir\\Debug\\\\" /Fd"cmTC_2113d.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_587a4.dir\\Debug\\\\" /Fd"cmTC_587a4.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hqdzl1\\Debug\\cmTC_2113d.exe" /INCREMENTAL /ILK:"cmTC_2113d.dir\\Debug\\cmTC_2113d.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/KamaleshMahata/Documents/LearnChemistry/Repo/learnchemistry-backend/build/CMakeFiles/CMakeScratch/TryCompile-hqdzl1/Debug/cmTC_2113d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/KamaleshMahata/Documents/LearnChemistry/Repo/learnchemistry-backend/build/CMakeFiles/CMakeScratch/TryCompile-hqdzl1/Debug/cmTC_2113d.lib" /MACHINE:X64  /machine:x64 cmTC_2113d.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_2113d.vcxproj -> C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hqdzl1\\Debug\\cmTC_2113d.exe
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-llr46k\\Debug\\cmTC_587a4.exe" /INCREMENTAL /ILK:"cmTC_587a4.dir\\Debug\\cmTC_587a4.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/KamaleshMahata/Documents/LearnChemistry/Repo/learnchemistry-backend/build/CMakeFiles/CMakeScratch/TryCompile-llr46k/Debug/cmTC_587a4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/KamaleshMahata/Documents/LearnChemistry/Repo/learnchemistry-backend/build/CMakeFiles/CMakeScratch/TryCompile-llr46k/Debug/cmTC_587a4.lib" /MACHINE:X64  /machine:x64 cmTC_587a4.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_587a4.vcxproj -> C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-llr46k\\Debug\\cmTC_587a4.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_2113d.dir\\Debug\\cmTC_2113d.tlog\\unsuccessfulbuild".
-          Touching "cmTC_2113d.dir\\Debug\\cmTC_2113d.tlog\\cmTC_2113d.lastbuildstate".
-        Done Building Project "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hqdzl1\\cmTC_2113d.vcxproj" (default targets).
+          Deleting file "cmTC_587a4.dir\\Debug\\cmTC_587a4.tlog\\unsuccessfulbuild".
+          Touching "cmTC_587a4.dir\\Debug\\cmTC_587a4.tlog\\cmTC_587a4.lastbuildstate".
+        Done Building Project "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-llr46k\\cmTC_587a4.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.66
+        Time Elapsed 00:00:01.60
         
       exitCode: 0
   -
@@ -1792,6 +1862,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -1929,6 +2000,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -2062,6 +2134,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -2195,6 +2268,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -2332,6 +2406,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -2465,6 +2540,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -2602,6 +2678,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -2735,6 +2812,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -2864,6 +2942,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -3005,6 +3084,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -3142,6 +3222,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -3283,6 +3364,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -3420,6 +3502,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -3557,6 +3640,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -3591,8 +3675,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "C:/Users/KamaleshMahata/Documents/LearnChemistry/Repo/learnchemistry-backend/build/CMakeFiles/CMakeScratch/TryCompile-by1rnz"
-      binary: "C:/Users/KamaleshMahata/Documents/LearnChemistry/Repo/learnchemistry-backend/build/CMakeFiles/CMakeScratch/TryCompile-by1rnz"
+      source: "C:/Users/KamaleshMahata/Documents/LearnChemistry/Repo/learnchemistry-backend/build/CMakeFiles/CMakeScratch/TryCompile-blgsqg"
+      binary: "C:/Users/KamaleshMahata/Documents/LearnChemistry/Repo/learnchemistry-backend/build/CMakeFiles/CMakeScratch/TryCompile-blgsqg"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -3606,68 +3690,68 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/KamaleshMahata/Documents/LearnChemistry/Repo/learnchemistry-backend/build/CMakeFiles/CMakeScratch/TryCompile-by1rnz'
+        Change Dir: 'C:/Users/KamaleshMahata/Documents/LearnChemistry/Repo/learnchemistry-backend/build/CMakeFiles/CMakeScratch/TryCompile-blgsqg'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Insiders/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_4de25.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Insiders/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_71f41.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.6.1+e5ebe1565 for .NET Framework
-        Build started 27-04-2026 20:48:06.
+        Build started 02-05-2026 20:53:12.
         
-        Project "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-by1rnz\\cmTC_4de25.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-blgsqg\\cmTC_71f41.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-by1rnz\\Debug\\".
-          Creating directory "cmTC_4de25.dir\\Debug\\cmTC_4de25.tlog\\".
+          Creating directory "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-blgsqg\\Debug\\".
+          Creating directory "cmTC_71f41.dir\\Debug\\cmTC_71f41.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_4de25.dir\\Debug\\cmTC_4de25.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_4de25.dir\\Debug\\cmTC_4de25.tlog\\unsuccessfulbuild".
+          Creating "cmTC_71f41.dir\\Debug\\cmTC_71f41.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_71f41.dir\\Debug\\cmTC_71f41.tlog\\unsuccessfulbuild".
         ComputeStdModulesCompileInputs:
           Reading library manifest file 'C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\VC\\Tools\\MSVC\\14.51.36231\\modules\\modules.json' which provides data for library 'microsoft/STL'.
           Adding module source 'C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\VC\\Tools\\MSVC\\14.51.36231\\modules\\std.ixx' from library 'microsoft/STL' to be built with this project.
           Adding module source 'C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\VC\\Tools\\MSVC\\14.51.36231\\modules\\std.compat.ixx' from library 'microsoft/STL' to be built with this project.
         MakeDirsForCl:
-          Creating directory "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-by1rnz\\cmTC_4de25.dir\\Debug\\microsoft\\STL".
+          Creating directory "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-blgsqg\\cmTC_71f41.dir\\Debug\\microsoft\\STL".
         SetModuleDependencies:
-          Creating directory "cmTC_4de25.dir\\Debug\\cmTC_4de25_MD.tlog\\".
+          Creating directory "cmTC_71f41.dir\\Debug\\cmTC_71f41_MD.tlog\\".
           Scanning sources for module dependencies...
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_4de25.dir\\Debug\\\\" /scanDependencies "cmTC_4de25.dir\\Debug\\\\" /Fo"cmTC_4de25.dir\\Debug\\\\" /Fd"cmTC_4de25.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-by1rnz\\src.cxx"
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_71f41.dir\\Debug\\\\" /scanDependencies "cmTC_71f41.dir\\Debug\\\\" /Fo"cmTC_71f41.dir\\Debug\\\\" /Fd"cmTC_71f41.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-blgsqg\\src.cxx"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36231 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_4de25.dir\\Debug\\\\" /scanDependencies "cmTC_4de25.dir\\Debug\\\\" /Fo"cmTC_4de25.dir\\Debug\\\\" /Fd"cmTC_4de25.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-by1rnz\\src.cxx"
+          cl /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_71f41.dir\\Debug\\\\" /scanDependencies "cmTC_71f41.dir\\Debug\\\\" /Fo"cmTC_71f41.dir\\Debug\\\\" /Fd"cmTC_71f41.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-blgsqg\\src.cxx"
           src.cxx
-        C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-by1rnz\\src.cxx(1,10): fatal  error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-by1rnz\\cmTC_4de25.vcxproj]
-        C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-by1rnz\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-by1rnz\\cmTC_4de25.vcxproj]
-        C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\MSBuild\\Microsoft\\VC\\v180\\Microsoft.CppCommon.targets(534,5): warning MSB8074: Cannot read Module Dependencies file cmTC_4de25.dir\\Debug\\src.cxx.module.json: Expecting element 'root' from namespace ''.. Encountered 'None'  with name '', namespace ''.  The build order might be incorrect. [C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-by1rnz\\cmTC_4de25.vcxproj]
+        C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-blgsqg\\src.cxx(1,10): fatal  error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-blgsqg\\cmTC_71f41.vcxproj]
+        C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-blgsqg\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-blgsqg\\cmTC_71f41.vcxproj]
+        C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\MSBuild\\Microsoft\\VC\\v180\\Microsoft.CppCommon.targets(534,5): warning MSB8074: Cannot read Module Dependencies file cmTC_71f41.dir\\Debug\\src.cxx.module.json: Expecting element 'root' from namespace ''.. Encountered 'None'  with name '', namespace ''.  The build order might be incorrect. [C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-blgsqg\\cmTC_71f41.vcxproj]
         ClCompile:
           Compiling...
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_4de25.dir\\Debug\\\\" /Fo"cmTC_4de25.dir\\Debug\\\\" /Fd"cmTC_4de25.dir\\Debug\\vc145.pdb" /sourceDependencies "cmTC_4de25.dir\\Debug\\.d.json" /external:W1 /TP /errorReport:queue "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-by1rnz\\src.cxx"
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_71f41.dir\\Debug\\\\" /Fo"cmTC_71f41.dir\\Debug\\\\" /Fd"cmTC_71f41.dir\\Debug\\vc145.pdb" /sourceDependencies "cmTC_71f41.dir\\Debug\\.d.json" /external:W1 /TP /errorReport:queue "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-blgsqg\\src.cxx"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36231 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_4de25.dir\\Debug\\\\" /Fo"cmTC_4de25.dir\\Debug\\\\" /Fd"cmTC_4de25.dir\\Debug\\vc145.pdb" /sourceDependencies "cmTC_4de25.dir\\Debug\\.d.json" /external:W1 /TP /errorReport:queue "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-by1rnz\\src.cxx"
+          cl /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_71f41.dir\\Debug\\\\" /Fo"cmTC_71f41.dir\\Debug\\\\" /Fd"cmTC_71f41.dir\\Debug\\vc145.pdb" /sourceDependencies "cmTC_71f41.dir\\Debug\\.d.json" /external:W1 /TP /errorReport:queue "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-blgsqg\\src.cxx"
           src.cxx
-        C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-by1rnz\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-by1rnz\\cmTC_4de25.vcxproj]
-        Done Building Project "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-by1rnz\\cmTC_4de25.vcxproj" (default targets) -- FAILED.
+        C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-blgsqg\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-blgsqg\\cmTC_71f41.vcxproj]
+        Done Building Project "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-blgsqg\\cmTC_71f41.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-by1rnz\\cmTC_4de25.vcxproj" (default target) (1) ->
+        "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-blgsqg\\cmTC_71f41.vcxproj" (default target) (1) ->
         (SetModuleDependencies target) -> 
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\MSBuild\\Microsoft\\VC\\v180\\Microsoft.CppCommon.targets(534,5): warning MSB8074: Cannot read Module Dependencies file cmTC_4de25.dir\\Debug\\src.cxx.module.json: Expecting element 'root' from namespace ''.. Encountered 'None'  with name '', namespace ''.  The build order might be incorrect. [C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-by1rnz\\cmTC_4de25.vcxproj]
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\MSBuild\\Microsoft\\VC\\v180\\Microsoft.CppCommon.targets(534,5): warning MSB8074: Cannot read Module Dependencies file cmTC_71f41.dir\\Debug\\src.cxx.module.json: Expecting element 'root' from namespace ''.. Encountered 'None'  with name '', namespace ''.  The build order might be incorrect. [C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-blgsqg\\cmTC_71f41.vcxproj]
         
         
-        "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-by1rnz\\cmTC_4de25.vcxproj" (default target) (1) ->
+        "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-blgsqg\\cmTC_71f41.vcxproj" (default target) (1) ->
         (SetModuleDependencies target) -> 
-          C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-by1rnz\\src.cxx(1,10): fatal  error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-by1rnz\\cmTC_4de25.vcxproj]
-          C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-by1rnz\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-by1rnz\\cmTC_4de25.vcxproj]
+          C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-blgsqg\\src.cxx(1,10): fatal  error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-blgsqg\\cmTC_71f41.vcxproj]
+          C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-blgsqg\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-blgsqg\\cmTC_71f41.vcxproj]
         
         
-        "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-by1rnz\\cmTC_4de25.vcxproj" (default target) (1) ->
+        "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-blgsqg\\cmTC_71f41.vcxproj" (default target) (1) ->
         (ClCompile target) -> 
-          C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-by1rnz\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-by1rnz\\cmTC_4de25.vcxproj]
+          C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-blgsqg\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-blgsqg\\cmTC_71f41.vcxproj]
         
             1 Warning(s)
             3 Error(s)
         
-        Time Elapsed 00:00:00.87
+        Time Elapsed 00:00:01.63
         
       exitCode: 1
   -
@@ -3693,8 +3777,8 @@ events:
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "C:/Users/KamaleshMahata/Documents/LearnChemistry/Repo/learnchemistry-backend/build/CMakeFiles/CMakeScratch/TryCompile-lwdjm1"
-      binary: "C:/Users/KamaleshMahata/Documents/LearnChemistry/Repo/learnchemistry-backend/build/CMakeFiles/CMakeScratch/TryCompile-lwdjm1"
+      source: "C:/Users/KamaleshMahata/Documents/LearnChemistry/Repo/learnchemistry-backend/build/CMakeFiles/CMakeScratch/TryCompile-90qek8"
+      binary: "C:/Users/KamaleshMahata/Documents/LearnChemistry/Repo/learnchemistry-backend/build/CMakeFiles/CMakeScratch/TryCompile-90qek8"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -3708,56 +3792,56 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/KamaleshMahata/Documents/LearnChemistry/Repo/learnchemistry-backend/build/CMakeFiles/CMakeScratch/TryCompile-lwdjm1'
+        Change Dir: 'C:/Users/KamaleshMahata/Documents/LearnChemistry/Repo/learnchemistry-backend/build/CMakeFiles/CMakeScratch/TryCompile-90qek8'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Insiders/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e2673.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Insiders/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d8204.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.6.1+e5ebe1565 for .NET Framework
-        Build started 27-04-2026 20:48:07.
+        Build started 02-05-2026 20:53:14.
         
-        Project "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lwdjm1\\cmTC_e2673.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-90qek8\\cmTC_d8204.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lwdjm1\\Debug\\".
-          Creating directory "cmTC_e2673.dir\\Debug\\cmTC_e2673.tlog\\".
+          Creating directory "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-90qek8\\Debug\\".
+          Creating directory "cmTC_d8204.dir\\Debug\\cmTC_d8204.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_e2673.dir\\Debug\\cmTC_e2673.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_e2673.dir\\Debug\\cmTC_e2673.tlog\\unsuccessfulbuild".
+          Creating "cmTC_d8204.dir\\Debug\\cmTC_d8204.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_d8204.dir\\Debug\\cmTC_d8204.tlog\\unsuccessfulbuild".
         ComputeStdModulesCompileInputs:
           Reading library manifest file 'C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\VC\\Tools\\MSVC\\14.51.36231\\modules\\modules.json' which provides data for library 'microsoft/STL'.
           Adding module source 'C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\VC\\Tools\\MSVC\\14.51.36231\\modules\\std.ixx' from library 'microsoft/STL' to be built with this project.
           Adding module source 'C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\VC\\Tools\\MSVC\\14.51.36231\\modules\\std.compat.ixx' from library 'microsoft/STL' to be built with this project.
         MakeDirsForCl:
-          Creating directory "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lwdjm1\\cmTC_e2673.dir\\Debug\\microsoft\\STL".
+          Creating directory "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-90qek8\\cmTC_d8204.dir\\Debug\\microsoft\\STL".
         SetModuleDependencies:
-          Creating directory "cmTC_e2673.dir\\Debug\\cmTC_e2673_MD.tlog\\".
+          Creating directory "cmTC_d8204.dir\\Debug\\cmTC_d8204_MD.tlog\\".
           Scanning sources for module dependencies...
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_e2673.dir\\Debug\\\\" /scanDependencies "cmTC_e2673.dir\\Debug\\\\" /Fo"cmTC_e2673.dir\\Debug\\\\" /Fd"cmTC_e2673.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lwdjm1\\CheckFunctionExists.cxx"
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_d8204.dir\\Debug\\\\" /scanDependencies "cmTC_d8204.dir\\Debug\\\\" /Fo"cmTC_d8204.dir\\Debug\\\\" /Fd"cmTC_d8204.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-90qek8\\CheckFunctionExists.cxx"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36231 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_e2673.dir\\Debug\\\\" /scanDependencies "cmTC_e2673.dir\\Debug\\\\" /Fo"cmTC_e2673.dir\\Debug\\\\" /Fd"cmTC_e2673.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lwdjm1\\CheckFunctionExists.cxx"
+          cl /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_d8204.dir\\Debug\\\\" /scanDependencies "cmTC_d8204.dir\\Debug\\\\" /Fo"cmTC_d8204.dir\\Debug\\\\" /Fd"cmTC_d8204.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-90qek8\\CheckFunctionExists.cxx"
           CheckFunctionExists.cxx
         ClCompile:
           Compiling...
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_e2673.dir\\Debug\\\\" /Fo"cmTC_e2673.dir\\Debug\\\\" /Fd"cmTC_e2673.dir\\Debug\\vc145.pdb" /sourceDependencies "cmTC_e2673.dir\\Debug\\.d.json" /external:W1 /TP /errorReport:queue "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lwdjm1\\CheckFunctionExists.cxx"
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_d8204.dir\\Debug\\\\" /Fo"cmTC_d8204.dir\\Debug\\\\" /Fd"cmTC_d8204.dir\\Debug\\vc145.pdb" /sourceDependencies "cmTC_d8204.dir\\Debug\\.d.json" /external:W1 /TP /errorReport:queue "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-90qek8\\CheckFunctionExists.cxx"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36231 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_e2673.dir\\Debug\\\\" /Fo"cmTC_e2673.dir\\Debug\\\\" /Fd"cmTC_e2673.dir\\Debug\\vc145.pdb" /sourceDependencies "cmTC_e2673.dir\\Debug\\.d.json" /external:W1 /TP /errorReport:queue "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lwdjm1\\CheckFunctionExists.cxx"
+          cl /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_d8204.dir\\Debug\\\\" /Fo"cmTC_d8204.dir\\Debug\\\\" /Fd"cmTC_d8204.dir\\Debug\\vc145.pdb" /sourceDependencies "cmTC_d8204.dir\\Debug\\.d.json" /external:W1 /TP /errorReport:queue "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-90qek8\\CheckFunctionExists.cxx"
           CheckFunctionExists.cxx
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lwdjm1\\Debug\\cmTC_e2673.exe" /INCREMENTAL /ILK:"cmTC_e2673.dir\\Debug\\cmTC_e2673.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/KamaleshMahata/Documents/LearnChemistry/Repo/learnchemistry-backend/build/CMakeFiles/CMakeScratch/TryCompile-lwdjm1/Debug/cmTC_e2673.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/KamaleshMahata/Documents/LearnChemistry/Repo/learnchemistry-backend/build/CMakeFiles/CMakeScratch/TryCompile-lwdjm1/Debug/cmTC_e2673.lib" /MACHINE:X64  /machine:x64 cmTC_e2673.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lwdjm1\\cmTC_e2673.vcxproj]
-        Done Building Project "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lwdjm1\\cmTC_e2673.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-90qek8\\Debug\\cmTC_d8204.exe" /INCREMENTAL /ILK:"cmTC_d8204.dir\\Debug\\cmTC_d8204.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/KamaleshMahata/Documents/LearnChemistry/Repo/learnchemistry-backend/build/CMakeFiles/CMakeScratch/TryCompile-90qek8/Debug/cmTC_d8204.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/KamaleshMahata/Documents/LearnChemistry/Repo/learnchemistry-backend/build/CMakeFiles/CMakeScratch/TryCompile-90qek8/Debug/cmTC_d8204.lib" /MACHINE:X64  /machine:x64 cmTC_d8204.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-90qek8\\cmTC_d8204.vcxproj]
+        Done Building Project "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-90qek8\\cmTC_d8204.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lwdjm1\\cmTC_e2673.vcxproj" (default target) (1) ->
+        "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-90qek8\\cmTC_d8204.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lwdjm1\\cmTC_e2673.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-90qek8\\cmTC_d8204.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.65
+        Time Elapsed 00:00:02.06
         
       exitCode: 1
   -
@@ -3783,8 +3867,8 @@ events:
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "C:/Users/KamaleshMahata/Documents/LearnChemistry/Repo/learnchemistry-backend/build/CMakeFiles/CMakeScratch/TryCompile-rkd3s7"
-      binary: "C:/Users/KamaleshMahata/Documents/LearnChemistry/Repo/learnchemistry-backend/build/CMakeFiles/CMakeScratch/TryCompile-rkd3s7"
+      source: "C:/Users/KamaleshMahata/Documents/LearnChemistry/Repo/learnchemistry-backend/build/CMakeFiles/CMakeScratch/TryCompile-bu7qh0"
+      binary: "C:/Users/KamaleshMahata/Documents/LearnChemistry/Repo/learnchemistry-backend/build/CMakeFiles/CMakeScratch/TryCompile-bu7qh0"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -3798,56 +3882,56 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/KamaleshMahata/Documents/LearnChemistry/Repo/learnchemistry-backend/build/CMakeFiles/CMakeScratch/TryCompile-rkd3s7'
+        Change Dir: 'C:/Users/KamaleshMahata/Documents/LearnChemistry/Repo/learnchemistry-backend/build/CMakeFiles/CMakeScratch/TryCompile-bu7qh0'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Insiders/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_8d89e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Insiders/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_4d978.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.6.1+e5ebe1565 for .NET Framework
-        Build started 27-04-2026 20:48:08.
+        Build started 02-05-2026 20:53:16.
         
-        Project "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rkd3s7\\cmTC_8d89e.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bu7qh0\\cmTC_4d978.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rkd3s7\\Debug\\".
-          Creating directory "cmTC_8d89e.dir\\Debug\\cmTC_8d89e.tlog\\".
+          Creating directory "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bu7qh0\\Debug\\".
+          Creating directory "cmTC_4d978.dir\\Debug\\cmTC_4d978.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_8d89e.dir\\Debug\\cmTC_8d89e.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_8d89e.dir\\Debug\\cmTC_8d89e.tlog\\unsuccessfulbuild".
+          Creating "cmTC_4d978.dir\\Debug\\cmTC_4d978.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_4d978.dir\\Debug\\cmTC_4d978.tlog\\unsuccessfulbuild".
         ComputeStdModulesCompileInputs:
           Reading library manifest file 'C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\VC\\Tools\\MSVC\\14.51.36231\\modules\\modules.json' which provides data for library 'microsoft/STL'.
           Adding module source 'C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\VC\\Tools\\MSVC\\14.51.36231\\modules\\std.ixx' from library 'microsoft/STL' to be built with this project.
           Adding module source 'C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\VC\\Tools\\MSVC\\14.51.36231\\modules\\std.compat.ixx' from library 'microsoft/STL' to be built with this project.
         MakeDirsForCl:
-          Creating directory "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rkd3s7\\cmTC_8d89e.dir\\Debug\\microsoft\\STL".
+          Creating directory "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bu7qh0\\cmTC_4d978.dir\\Debug\\microsoft\\STL".
         SetModuleDependencies:
-          Creating directory "cmTC_8d89e.dir\\Debug\\cmTC_8d89e_MD.tlog\\".
+          Creating directory "cmTC_4d978.dir\\Debug\\cmTC_4d978_MD.tlog\\".
           Scanning sources for module dependencies...
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_8d89e.dir\\Debug\\\\" /scanDependencies "cmTC_8d89e.dir\\Debug\\\\" /Fo"cmTC_8d89e.dir\\Debug\\\\" /Fd"cmTC_8d89e.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rkd3s7\\CheckFunctionExists.cxx"
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_4d978.dir\\Debug\\\\" /scanDependencies "cmTC_4d978.dir\\Debug\\\\" /Fo"cmTC_4d978.dir\\Debug\\\\" /Fd"cmTC_4d978.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bu7qh0\\CheckFunctionExists.cxx"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36231 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_8d89e.dir\\Debug\\\\" /scanDependencies "cmTC_8d89e.dir\\Debug\\\\" /Fo"cmTC_8d89e.dir\\Debug\\\\" /Fd"cmTC_8d89e.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rkd3s7\\CheckFunctionExists.cxx"
+          cl /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_4d978.dir\\Debug\\\\" /scanDependencies "cmTC_4d978.dir\\Debug\\\\" /Fo"cmTC_4d978.dir\\Debug\\\\" /Fd"cmTC_4d978.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bu7qh0\\CheckFunctionExists.cxx"
           CheckFunctionExists.cxx
         ClCompile:
           Compiling...
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_8d89e.dir\\Debug\\\\" /Fo"cmTC_8d89e.dir\\Debug\\\\" /Fd"cmTC_8d89e.dir\\Debug\\vc145.pdb" /sourceDependencies "cmTC_8d89e.dir\\Debug\\.d.json" /external:W1 /TP /errorReport:queue "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rkd3s7\\CheckFunctionExists.cxx"
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_4d978.dir\\Debug\\\\" /Fo"cmTC_4d978.dir\\Debug\\\\" /Fd"cmTC_4d978.dir\\Debug\\vc145.pdb" /sourceDependencies "cmTC_4d978.dir\\Debug\\.d.json" /external:W1 /TP /errorReport:queue "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bu7qh0\\CheckFunctionExists.cxx"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36231 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_8d89e.dir\\Debug\\\\" /Fo"cmTC_8d89e.dir\\Debug\\\\" /Fd"cmTC_8d89e.dir\\Debug\\vc145.pdb" /sourceDependencies "cmTC_8d89e.dir\\Debug\\.d.json" /external:W1 /TP /errorReport:queue "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rkd3s7\\CheckFunctionExists.cxx"
+          cl /c /Zi /W1 /WX- /diagnostics:column /FS /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /std:c++20 /ifcOutput "cmTC_4d978.dir\\Debug\\\\" /Fo"cmTC_4d978.dir\\Debug\\\\" /Fd"cmTC_4d978.dir\\Debug\\vc145.pdb" /sourceDependencies "cmTC_4d978.dir\\Debug\\.d.json" /external:W1 /TP /errorReport:queue "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bu7qh0\\CheckFunctionExists.cxx"
           CheckFunctionExists.cxx
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rkd3s7\\Debug\\cmTC_8d89e.exe" /INCREMENTAL /ILK:"cmTC_8d89e.dir\\Debug\\cmTC_8d89e.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/KamaleshMahata/Documents/LearnChemistry/Repo/learnchemistry-backend/build/CMakeFiles/CMakeScratch/TryCompile-rkd3s7/Debug/cmTC_8d89e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/KamaleshMahata/Documents/LearnChemistry/Repo/learnchemistry-backend/build/CMakeFiles/CMakeScratch/TryCompile-rkd3s7/Debug/cmTC_8d89e.lib" /MACHINE:X64  /machine:x64 cmTC_8d89e.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rkd3s7\\cmTC_8d89e.vcxproj]
-        Done Building Project "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rkd3s7\\cmTC_8d89e.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bu7qh0\\Debug\\cmTC_4d978.exe" /INCREMENTAL /ILK:"cmTC_4d978.dir\\Debug\\cmTC_4d978.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/KamaleshMahata/Documents/LearnChemistry/Repo/learnchemistry-backend/build/CMakeFiles/CMakeScratch/TryCompile-bu7qh0/Debug/cmTC_4d978.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/KamaleshMahata/Documents/LearnChemistry/Repo/learnchemistry-backend/build/CMakeFiles/CMakeScratch/TryCompile-bu7qh0/Debug/cmTC_4d978.lib" /MACHINE:X64  /machine:x64 cmTC_4d978.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bu7qh0\\cmTC_4d978.vcxproj]
+        Done Building Project "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bu7qh0\\cmTC_4d978.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rkd3s7\\cmTC_8d89e.vcxproj" (default target) (1) ->
+        "C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bu7qh0\\cmTC_4d978.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rkd3s7\\cmTC_8d89e.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\KamaleshMahata\\Documents\\LearnChemistry\\Repo\\learnchemistry-backend\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bu7qh0\\cmTC_4d978.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.71
+        Time Elapsed 00:00:01.90
         
       exitCode: 1
   -
@@ -3973,6 +4057,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -4106,6 +4191,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -4243,6 +4329,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -4380,6 +4467,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -4525,6 +4613,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -4666,6 +4755,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -4803,6 +4893,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -4940,6 +5031,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -5077,6 +5169,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -5210,6 +5303,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -5343,6 +5437,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -5480,6 +5575,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -5621,6 +5717,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -5758,6 +5855,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -5891,6 +5989,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -6032,6 +6131,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -6177,6 +6277,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -6322,6 +6423,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -6463,6 +6565,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -6620,6 +6723,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -6765,6 +6869,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -6914,6 +7019,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -7063,6 +7169,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -7208,6 +7315,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -7353,6 +7461,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -7494,6 +7603,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -7639,6 +7749,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -7784,6 +7895,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -7925,6 +8037,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -8066,6 +8179,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -8203,6 +8317,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -8340,6 +8455,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -8477,6 +8593,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -8614,6 +8731,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -8747,6 +8865,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -8876,6 +8995,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -10006,6 +10126,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -10123,6 +10244,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -10171,6 +10293,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -10224,6 +10347,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -10283,6 +10407,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -10340,6 +10465,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -10399,6 +10525,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -10460,6 +10587,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -10513,6 +10641,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -10569,6 +10698,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -10627,6 +10757,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -10748,6 +10879,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -10811,6 +10943,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -10935,6 +11068,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -11063,6 +11197,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -11216,6 +11351,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -11337,6 +11473,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -11387,6 +11524,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/Git/cmd/"
       - "C:/vcpkg/installed/x64-windows/debug/vcpkg/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Server 8.0/bin/"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/KamaleshMahata/AppData/Local/Microsoft/WindowsApps/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/KamaleshMahata/AppData/Local/Programs/Podman/"
@@ -11422,6 +11560,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/Program Files/Git/cmd/"
       - "C:/vcpkg/installed/x64-windows/vcpkg/"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Server 8.0/bin/"
+      - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/vcpkg/installed/x64-windows/Users/KamaleshMahata/AppData/Local/Microsoft/WindowsApps/"
       - "C:/vcpkg/installed/x64-windows/Users/KamaleshMahata/AppData/Local/Programs/Podman/"
@@ -11457,6 +11596,7 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/vcpkg/"
       - "C:/Program Files/MySQL/MySQL Server 8.0/bin/"
+      - "C:/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/Users/KamaleshMahata/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/KamaleshMahata/AppData/Local/Programs/Podman/"
@@ -11533,6 +11673,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Server 8.0/bin/pwsh.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Server 8.0/bin/pwsh.exe"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Server 8.0/bin/pwsh"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/pwsh.com"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/pwsh.exe"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/pwsh"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Shell 8.0/bin/pwsh.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Shell 8.0/bin/pwsh.exe"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Shell 8.0/bin/pwsh"
@@ -11638,6 +11781,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Server 8.0/bin/pwsh.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Server 8.0/bin/pwsh.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Server 8.0/bin/pwsh"
+      - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/pwsh.com"
+      - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/pwsh.exe"
+      - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/pwsh"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Shell 8.0/bin/pwsh.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Shell 8.0/bin/pwsh.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Shell 8.0/bin/pwsh"
@@ -11743,6 +11889,9 @@ events:
       - "C:/Program Files/MySQL/MySQL Server 8.0/bin/pwsh.com"
       - "C:/Program Files/MySQL/MySQL Server 8.0/bin/pwsh.exe"
       - "C:/Program Files/MySQL/MySQL Server 8.0/bin/pwsh"
+      - "C:/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/pwsh.com"
+      - "C:/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/pwsh.exe"
+      - "C:/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/pwsh"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/pwsh.com"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/pwsh.exe"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/pwsh"
@@ -11809,6 +11958,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"
@@ -11859,6 +12009,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/Git/cmd/"
       - "C:/vcpkg/installed/x64-windows/debug/vcpkg/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Server 8.0/bin/"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/KamaleshMahata/AppData/Local/Microsoft/WindowsApps/"
       - "C:/vcpkg/installed/x64-windows/debug/Users/KamaleshMahata/AppData/Local/Programs/Podman/"
@@ -11894,6 +12045,7 @@ events:
       - "C:/vcpkg/installed/x64-windows/Program Files/Git/cmd/"
       - "C:/vcpkg/installed/x64-windows/vcpkg/"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Server 8.0/bin/"
+      - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/vcpkg/installed/x64-windows/Users/KamaleshMahata/AppData/Local/Microsoft/WindowsApps/"
       - "C:/vcpkg/installed/x64-windows/Users/KamaleshMahata/AppData/Local/Programs/Podman/"
@@ -11929,6 +12081,7 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/vcpkg/"
       - "C:/Program Files/MySQL/MySQL Server 8.0/bin/"
+      - "C:/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/"
       - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
       - "C:/Users/KamaleshMahata/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/KamaleshMahata/AppData/Local/Programs/Podman/"
@@ -12005,6 +12158,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Server 8.0/bin/powershell.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Server 8.0/bin/powershell.exe"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Server 8.0/bin/powershell"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/powershell.com"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/powershell.exe"
+      - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/powershell"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Shell 8.0/bin/powershell.com"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Shell 8.0/bin/powershell.exe"
       - "C:/vcpkg/installed/x64-windows/debug/Program Files/MySQL/MySQL Shell 8.0/bin/powershell"
@@ -12110,6 +12266,9 @@ events:
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Server 8.0/bin/powershell.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Server 8.0/bin/powershell.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Server 8.0/bin/powershell"
+      - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/powershell.com"
+      - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/powershell.exe"
+      - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Connector C++ 9.6/lib64/powershell"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Shell 8.0/bin/powershell.com"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Shell 8.0/bin/powershell.exe"
       - "C:/vcpkg/installed/x64-windows/Program Files/MySQL/MySQL Shell 8.0/bin/powershell"
@@ -12213,6 +12372,7 @@ events:
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\vcpkg"
         - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Connector C++ 9.6\\lib64"
         - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\KamaleshMahata\\AppData\\Local\\Programs\\Podman\\"

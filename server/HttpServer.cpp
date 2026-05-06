@@ -10,6 +10,7 @@
 #include "controllers/MeController.h"
 #include "controllers/AdminController.h"
 #include "controllers/DownloadController.h"
+#include "controllers/ThumbController.h"
 
 #include <boost/asio/ip/address.hpp>
 #include <memory>
@@ -27,9 +28,9 @@ namespace learnChemistry::server {
 
         const std::string secret = cfg_.jwt_secret;
 
-        // =========================
+        // -------------------------
         // Auth routes
-        // =========================
+        // -------------------------
         auto makeAuthHandler = [this, secret](auto handlerFn) {
             return [this, secret, handlerFn](const http::request<http::string_body>& req,
                 learnChemistry::context::RequestContext& ctx)
@@ -41,12 +42,13 @@ namespace learnChemistry::server {
 
         router_.addRoute(http::verb::post, "/v1/auth/login",
             makeAuthHandler(&learnChemistry::controllers::AuthController::login));
+
         router_.addRoute(http::verb::post, "/v1/auth/signup",
             makeAuthHandler(&learnChemistry::controllers::AuthController::signup));
 
-        // =========================
+        // -------------------------
         // Courses (public)
-        // =========================
+        // -------------------------
         router_.addRoute(http::verb::get, "/v1/courses",
             [this](const http::request<http::string_body>& req,
                 learnChemistry::context::RequestContext& ctx)
@@ -63,9 +65,9 @@ namespace learnChemistry::server {
                 return controller.detail(req, ctx);
             });
 
-        // =========================
+        // -------------------------
         // Orders (JWT)
-        // =========================
+        // -------------------------
         router_.addRoute(http::verb::post, "/v1/orders/free",
             [this](const http::request<http::string_body>& req,
                 learnChemistry::context::RequestContext& ctx)
@@ -74,9 +76,9 @@ namespace learnChemistry::server {
                 return controller.freePurchase(req, ctx);
             });
 
-        // =========================
+        // -------------------------
         // Me (JWT)
-        // =========================
+        // -------------------------
         router_.addRoute(http::verb::get, "/v1/me/courses",
             [this](const http::request<http::string_body>& req,
                 learnChemistry::context::RequestContext& ctx)
@@ -85,9 +87,9 @@ namespace learnChemistry::server {
                 return controller.myCourses(req, ctx);
             });
 
-        // =========================
-        // Admin (JWT + ADMIN enforced inside AdminController)
-        // =========================
+        // -------------------------
+        // Admin (JWT + ADMIN enforced in controller)
+        // -------------------------
         router_.addRoute(http::verb::post, "/v1/admin/courses",
             [this](const http::request<http::string_body>& req,
                 learnChemistry::context::RequestContext& ctx)
@@ -104,6 +106,15 @@ namespace learnChemistry::server {
                 return controller.uploadCoursePdf(req, ctx);
             });
 
+        // ✅ FIXED: proper lambda passed as handler
+        router_.addRoute(http::verb::post, "/v1/admin/course-thumb/:id",
+            [this](const http::request<http::string_body>& req,
+                learnChemistry::context::RequestContext& ctx)
+            {
+                learnChemistry::controllers::AdminController controller(this->dbPool());
+                return controller.uploadCourseThumb(req, ctx);
+            });
+
         router_.addRoute(http::verb::get, "/v1/admin/orders",
             [this](const http::request<http::string_body>& req,
                 learnChemistry::context::RequestContext& ctx)
@@ -112,9 +123,8 @@ namespace learnChemistry::server {
                 return controller.listOrders(req, ctx);
             });
 
-        // ✅ IMPORTANT:
-        // Do NOT register /v1/download/:id in router_. Download uses http::file_body.
-        // It is served via HttpServer::handleDownload() and Session intercepts /v1/download.
+        // ⚠ Do NOT register /v1/download/:id or /v1/thumb/:id in router_
+        // They return file_body and are handled via Session interception.
     }
 
     void HttpServer::run() {
@@ -159,10 +169,7 @@ namespace learnChemistry::server {
 
         res.set(http::field::access_control_allow_methods, "GET, POST, PUT, DELETE, OPTIONS");
         res.set(http::field::access_control_allow_headers, "Content-Type, Authorization, X-Filename");
-
-        // ✅ allow JS to read headers like Content-Disposition
         res.set(http::field::access_control_expose_headers, "Content-Disposition, Content-Type");
-
         res.set(http::field::access_control_max_age, "600");
     }
 
@@ -179,10 +186,7 @@ namespace learnChemistry::server {
 
         res.set(http::field::access_control_allow_methods, "GET, POST, PUT, DELETE, OPTIONS");
         res.set(http::field::access_control_allow_headers, "Content-Type, Authorization, X-Filename");
-
-        // ✅ allow JS to read headers like Content-Disposition
         res.set(http::field::access_control_expose_headers, "Content-Disposition, Content-Type");
-
         res.set(http::field::access_control_max_age, "600");
     }
 
@@ -191,7 +195,6 @@ namespace learnChemistry::server {
     {
         const std::string origin = getOrigin(req);
 
-        // Preflight
         if (req.method() == http::verb::options) {
             http::response<http::string_body> res{ http::status::no_content, req.version() };
             addCorsHeaders(res, origin);
@@ -201,12 +204,10 @@ namespace learnChemistry::server {
 
         learnChemistry::context::RequestContext ctx;
 
-        // Normalize target
         std::string target = std::string(req.target());
         if (auto q = target.find('?'); q != std::string::npos) target.resize(q);
         if (target.size() > 1 && target.back() == '/') target.pop_back();
 
-        // JWT protection
         const bool requiresAuth =
             (target.rfind("/v1/me", 0) == 0) ||
             (target.rfind("/v1/orders", 0) == 0) ||
@@ -218,7 +219,6 @@ namespace learnChemistry::server {
                 auto res = learnChemistry::utils::HttpResponse::json(
                     http::status::unauthorized, { {"error","Missing Authorization header"} });
                 addCorsHeaders(res, origin);
-                res.version(req.version());
                 res.keep_alive(req.keep_alive());
                 return res;
             }
@@ -229,19 +229,16 @@ namespace learnChemistry::server {
                 auto res = learnChemistry::utils::HttpResponse::json(
                     http::status::unauthorized, { {"error","Invalid Authorization format"} });
                 addCorsHeaders(res, origin);
-                res.version(req.version());
                 res.keep_alive(req.keep_alive());
                 return res;
             }
 
             const std::string token = auth.substr(prefix.size());
             auto userOpt = learnChemistry::security::JwtService::verify(token, cfg_.jwt_secret);
-
             if (!userOpt) {
                 auto res = learnChemistry::utils::HttpResponse::json(
                     http::status::unauthorized, { {"error","Invalid or expired token"} });
                 addCorsHeaders(res, origin);
-                res.version(req.version());
                 res.keep_alive(req.keep_alive());
                 return res;
             }
@@ -249,7 +246,6 @@ namespace learnChemistry::server {
             ctx.user = *userOpt;
         }
 
-        // Route match (string only)
         auto route = router_.match(req.method(), target);
 
         http::response<http::string_body> res;
@@ -262,7 +258,6 @@ namespace learnChemistry::server {
         }
 
         addCorsHeaders(res, origin);
-        res.version(req.version());
         res.keep_alive(req.keep_alive());
         return res;
     }
@@ -271,10 +266,8 @@ namespace learnChemistry::server {
         HttpServer::handleDownload(const http::request<http::string_body>& req)
     {
         const std::string origin = getOrigin(req);
-
         learnChemistry::context::RequestContext ctx;
 
-        // JWT required
         auto it = req.find(http::field::authorization);
         if (it == req.end()) {
             http::response<http::file_body> res{ http::status::unauthorized, req.version() };
@@ -307,7 +300,19 @@ namespace learnChemistry::server {
         auto res = controller.downloadPdf(req, ctx);
 
         addCorsHeaders(res, origin);
-        res.version(req.version());
+        res.keep_alive(req.keep_alive());
+        return res;
+    }
+
+    http::response<http::file_body>
+        HttpServer::handleThumb(const http::request<http::string_body>& req)
+    {
+        const std::string origin = getOrigin(req);
+
+        learnChemistry::controllers::ThumbController controller(this->dbPool());
+        auto res = controller.getThumb(req);
+
+        addCorsHeaders(res, origin);
         res.keep_alive(req.keep_alive());
         return res;
     }

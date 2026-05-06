@@ -1,5 +1,3 @@
-// services/AdminService.cpp
-
 #include "services/AdminService.h"
 #include "repositories/AdminRepository.h"
 
@@ -52,23 +50,26 @@ namespace learnChemistry::services {
             slug += "-" + std::to_string(std::time(nullptr));
         }
 
+        // thumbnail_url will be filled after thumbnail upload; keep empty for now
         return learnChemistry::repositories::AdminRepository::insertCourse(
-            sess, slug, title, description, pricePaise, "INR", /*thumbnail*/"", /*active*/1
+            sess, slug, title, description, pricePaise, "INR", /*thumbnailUrl*/"", /*active*/1
         );
     }
 
-    // ✅ FIX: return type is PdfStoreResult (NOT AdminService::PdfStoreResult)
     PdfStoreResult AdminService::storePdf(long long courseId,
         const std::string& fileBytes,
         const std::string& originalFilename,
         const std::string& mimeType)
     {
         if (courseId <= 0) throw std::runtime_error("Invalid courseId");
-        if (fileBytes.empty()) throw std::runtime_error("Empty file body");
+        if (fileBytes.empty()) throw std::runtime_error("Empty PDF body");
 
-        // MVP safety limit (adjust as needed)
-        const size_t MAX_BYTES = 25 * 1024 * 1024; // 25 MB
-        if (fileBytes.size() > MAX_BYTES) throw std::runtime_error("PDF too large (max 25MB)");
+        if (mimeType.find("application/pdf") == std::string::npos) {
+            throw std::runtime_error("PDF Content-Type must be application/pdf");
+        }
+
+        const size_t MAX_BYTES = 50 * 1024 * 1024; // 50MB
+        if (fileBytes.size() > MAX_BYTES) throw std::runtime_error("PDF too large (max 50MB)");
 
         auto sessPtr = pool_.acquire();
         mysqlx::Session& sess = *sessPtr;
@@ -79,32 +80,65 @@ namespace learnChemistry::services {
 
         std::filesystem::create_directories("storage/pdfs");
 
-        const std::string storageKey =
+        const std::string pdfPath =
             "storage/pdfs/course_" + std::to_string(courseId) + "_" + std::to_string(std::time(nullptr)) + ".pdf";
 
-        std::ofstream out(storageKey, std::ios::binary);
+        std::ofstream out(pdfPath, std::ios::binary);
         out.write(fileBytes.data(), static_cast<std::streamsize>(fileBytes.size()));
         out.close();
+        if (!out) throw std::runtime_error("Failed to write PDF to disk");
 
-        if (!out) {
-            throw std::runtime_error("Failed to write PDF to disk");
+        learnChemistry::repositories::AdminRepository::updateCoursePdf(sess, courseId, pdfPath, mimeType);
+
+        return { courseId, pdfPath };
+    }
+
+    static std::string extFromImageMime(const std::string& mime) {
+        if (mime == "image/png") return ".png";
+        if (mime == "image/jpeg") return ".jpg";
+        if (mime == "image/webp") return ".webp";
+        // default
+        return ".jpg";
+    }
+
+    ThumbStoreResult AdminService::storeThumbnail(long long courseId,
+        const std::string& fileBytes,
+        const std::string& originalFilename,
+        const std::string& mimeType)
+    {
+        if (courseId <= 0) throw std::runtime_error("Invalid courseId");
+        if (fileBytes.empty()) throw std::runtime_error("Empty thumbnail body");
+
+        if (mimeType.rfind("image/", 0) != 0) {
+            throw std::runtime_error("Thumbnail Content-Type must be image/*");
         }
 
-        const long long fileSize = static_cast<long long>(fileBytes.size());
+        const size_t MAX_BYTES = 5 * 1024 * 1024; // 5MB
+        if (fileBytes.size() > MAX_BYTES) throw std::runtime_error("Thumbnail too large (max 5MB)");
 
-        long long assetId = learnChemistry::repositories::AdminRepository::insertCourseAsset(
-            sess,
-            courseId,
-            "PDF",
-            /*title*/"",
-            storageKey,
-            originalFilename,
-            mimeType,
-            fileSize,
-            /*active*/1
-        );
+        auto sessPtr = pool_.acquire();
+        mysqlx::Session& sess = *sessPtr;
 
-        return PdfStoreResult{ assetId, courseId, storageKey };
+        if (!learnChemistry::repositories::AdminRepository::courseExists(sess, courseId)) {
+            throw std::runtime_error("Course not found");
+        }
+
+        std::filesystem::create_directories("storage/thumbs");
+
+        const std::string ext = extFromImageMime(mimeType);
+        const std::string thumbPath =
+            "storage/thumbs/course_" + std::to_string(courseId) + "_" + std::to_string(std::time(nullptr)) + ext;
+
+        std::ofstream out(thumbPath, std::ios::binary);
+        out.write(fileBytes.data(), static_cast<std::streamsize>(fileBytes.size()));
+        out.close();
+        if (!out) throw std::runtime_error("Failed to write thumbnail to disk");
+
+        const std::string publicUrl = "/v1/thumb/" + std::to_string(courseId);
+
+        learnChemistry::repositories::AdminRepository::updateCourseThumbnail(sess, courseId, thumbPath, mimeType, publicUrl);
+
+        return { courseId, thumbPath, publicUrl };
     }
 
     nlohmann::json AdminService::listOrders() {
@@ -124,7 +158,6 @@ namespace learnChemistry::services {
                 {"createdAt", r[5].get<std::string>()}
                 });
         }
-
         return { {"items", items} };
     }
 
